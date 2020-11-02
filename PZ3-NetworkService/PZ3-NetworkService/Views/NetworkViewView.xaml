@@ -1,0 +1,205 @@
+﻿<UserControl x:Class="PZ3_NetworkService.Views.NetworkViewView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:PZ3_NetworkService.Views"
+             xmlns:interactivity="http://schemas.microsoft.com/expression/2010/interactivity"
+             xmlns:vml="clr-namespace:PZ3_NetworkService.VML"
+             xmlns:viewModel="clr-namespace:PZ3_NetworkService.ViewModel"
+             vml:ViewModelLocator.AutoHookedUpViewModel="True"
+             xmlns:data="clr-namespace:PZ3_NetworkService.Model"
+             mc:Ignorable="d" 
+             d:DesignHeight="600" d:DesignWidth="800">
+    <UserControl.Background>
+        <ImageBrush ImageSource="C:\Users\Bozo\Desktop\HCI\PZ3-NetworkService\PZ3-NetworkService\Slike\zaDecu.jpg"/>
+    </UserControl.Background>
+    <!-->
+    <UserControl.Resources>
+        <DataTemplate DataType="{x:Type data:Server}">
+            <StackPanel Orientation="Vertical">
+                <TextBlock Text="{Binding Path=Id, Mode=OneWay}"
+                           FontSize="14"
+                           TextWrapping="Wrap"/>
+                <TextBlock Text="{Binding Path=Name, Mode=OneWay}"
+                           
+                           TextWrapping="Wrap"/>
+                <TextBlock Text="{Binding Path=IpAddress, Mode=OneWay}"
+                           
+                           TextWrapping="Wrap"/>
+                <TextBlock Text="{Binding Path=Img_src, Mode=OneWay}"
+                           
+                           TextWrapping="Wrap"/>
+                <TextBlock Text="{Binding Path=Value, Mode=OneWay}"
+                           
+                           TextWrapping="Wrap"/>
+            </StackPanel>
+        </DataTemplate>
+    </UserControl.Resources>
+    <-->
+        <Grid>
+        <Canvas Name="canvas1" AllowDrop="True" Background="White" HorizontalAlignment="Left" Height="80" Margin="10,45,0,0" VerticalAlignment="Top" Width="100" RenderTransformOrigin="0.108,0.159">
+            <interactivity:Interaction.Triggers>
+                <interactivity:EventTrigger EventName="Drop">
+                    <interactivity:InvokeCommandAction Command="{Binding DropCanvas}" CommandParameter="{Binding ElementName=canvas1}"/>
+                </interactivity:EventTrigger>
+            </interactivity:Interaction.Triggers>
+            <TextBlock Text="Available" Background="MediumSpringGreen" Width="100" Canvas.Left="0" Canvas.Top="55" Height="18" TextWrapping="Wrap" TextAlignment="Center" RenderTransformOrigin="0.627,2.09" FontFamily="Bernard MT Condensed"/>
+        </Canvas>
+        <Canvas Name="canvas2" AllowDrop="True" Background="White" HorizontalAlignment="Left" Height="80" Margin="115,45,0,0" VerticalAlignment="Top" Width="100" RenderTransformOrigin="0.108,0.159">
+            <interactivity:Interaction.Triggers>
+                <interactivity:EventTrigger EventName="Drop">
+                    <interactivity:InvokeCommandAction Command="{Binding DropCanvas}" CommandParameter="{Binding ElementName=canvas2}"/>
+                </interactivity:EventTrigger>
+            </interactivity:Interaction.Triggers>
+            <TextBlock Text="Available" Background="MediumSpringGreen" Width="100" Canvas.Left="0" Canvas.Top="55" Height="18" TextWrapping="Wrap" TextAlignment="Center" RenderTransformOrigin="0.627,2.09" FontFamily="Bernard MT Condensed"/>
+        </Canvas>
+        <Canvas Name="canvas3" AllowDrop="True" Background="White" HorizontalAlignment="Left" Height="80" Margin="220,45,0,0" VerticalAlignment="Top" Width="100" RenderTransformOrigin="0.108,0.159">
+            <interactivity:Interaction.Triggers>
+                <interactivity:EventTrigger EventName="Drop">
+                    <interactivity:InvokeCommandAction Command="{Binding DropCanvas}" CommandParameter="{Binding ElementName=canvas3}"/>
+                </interactivity:EventTrigger>
+            </interactivity:Interaction.Triggers>
+            <TextBlock Text="Available" Background="MediumSpringGreen" Width="100" Canvas.Left="0" Canvas.Top="55" Height="18" TextWrapping="Wrap" TextAlignment="Center" RenderTransformOrigin="0.627,2.09" FontFamily="Bernard MT Condensed"/>
+        </Canvas>
+        <Canvas Name="canvas4" AllowDrop="True" Background="White" HorizontalAlignment="Left" Height="80" Margin="10,130,0,0" VerticalAlignment="Top" Width="100" RenderTransformOrigin="0.108,0.159">
+            <interactivity:Interaction.Triggers>
+                <interactivity:EventTrigger EventName="Drop">
+                    <interactivity:InvokeCommandAction Command="{Binding DropCanvas}" CommandParameter="{Binding ElementName=canvas4}"/>
+                </interactivity:EventTrigger>
+            </interactivity:Interaction.Triggers>
+            <TextBlock Text="Available" Background="MediumSpringGreen" Width="100" Canvas.Left="0" Canvas.Top="55" Height="18" TextWrapping="Wrap" TextAlignment="Center" RenderTransformOrigin="0.627,2.09" FontFamily="Bernard MT Condensed"/>
+        </Canvas>
+        <Canvas Name="canvas5" AllowDrop="True" Background="White" HorizontalAlignment="Left" Height="80" Margin="115,130,0,0" VerticalAlignment="Top" Width="100" RenderTransformOrigin="0.108,0.159">
+            <interactivity:Interaction.Triggers>
+                <interactivity:EventTrigger EventName="Drop">
+                    <interactivity:InvokeCommandAction Command="{Binding DropCanvas}" CommandParameter="{Binding ElementName=canvas5}"/>
+                </interactivity:EventTrigger>
+            </interactivity:Interaction.Triggers>
+            <TextBlock Text="Available" Background="MediumSpringGreen" Width="100" Canvas.Left="0" Canvas.Top="55" Height="18" TextWrapping="Wrap" TextAlignment="Center" RenderTransformOrigin="0.627,2.09" FontFamily="Bernard MT Condensed"/>
+        </Canvas>
+        <Canvas Name="canvas6" AllowDrop="True" Background="White" HorizontalAlignment="Left" Height="80" Margin="220,130,0,0" VerticalAlignment="Top" Width="100" RenderTransformOrigin="0.108,0.159">
+            <interactivity:Interaction.Triggers>
+                <interactivity:EventTrigger EventName="Drop">
+                    <interactivity:InvokeCommandAction Command="{Binding DropCanvas}" CommandParameter="{Binding ElementName=canvas6}"/>
+                </interactivity:EventTrigger>
+            </interactivity:Interaction.Triggers>
+            <TextBlock Text="Available" Background="MediumSpringGreen" Width="100" Canvas.Left="0" Canvas.Top="55" Height="18" TextWrapping="Wrap" TextAlignment="Center" RenderTransformOrigin="0.627,2.09" FontFamily="Bernard MT Condensed"/>
+        </Canvas>
+        <Canvas Name="canvas7" AllowDrop="True" Background="White" HorizontalAlignment="Left" Height="80" Margin="10,215,0,0" VerticalAlignment="Top" Width="100" RenderTransformOrigin="0.108,0.159">
+            <interactivity:Interaction.Triggers>
+                <interactivity:EventTrigger EventName="Drop">
+                    <interactivity:InvokeCommandAction Command="{Binding DropCanvas}" CommandParameter="{Binding ElementName=canvas7}"/>
+                </interactivity:EventTrigger>
+            </interactivity:Interaction.Triggers>
+            <TextBlock Text="Available" Background="MediumSpringGreen" Width="100" Canvas.Left="0" Canvas.Top="55" Height="18" TextWrapping="Wrap" TextAlignment="Center" RenderTransformOrigin="0.627,2.09" FontFamily="Bernard MT Condensed"/>
+        </Canvas>
+        <Canvas Name="canvas8" AllowDrop="True" Background="White" HorizontalAlignment="Left" Height="80" Margin="115,215,0,0" VerticalAlignment="Top" Width="100" RenderTransformOrigin="0.108,0.159">
+            <interactivity:Interaction.Triggers>
+                <interactivity:EventTrigger EventName="Drop">
+                    <interactivity:InvokeCommandAction Command="{Binding DropCanvas}" CommandParameter="{Binding ElementName=canvas8}"/>
+                </interactivity:EventTrigger>
+            </interactivity:Interaction.Triggers>
+            <TextBlock Text="Available" Background="MediumSpringGreen" Width="100" Canvas.Left="0" Canvas.Top="55" Height="18" TextWrapping="Wrap" TextAlignment="Center" RenderTransformOrigin="0.627,2.09" FontFamily="Bernard MT Condensed"/>
+        </Canvas>
+        <Canvas Name="canvas9" AllowDrop="True" Background="White" HorizontalAlignment="Left" Height="80" Margin="220,215,0,0" VerticalAlignment="Top" Width="100" RenderTransformOrigin="0.108,0.159">
+            <interactivity:Interaction.Triggers>
+                <interactivity:EventTrigger EventName="Drop">
+                    <interactivity:InvokeCommandAction Command="{Binding DropCanvas}" CommandParameter="{Binding ElementName=canvas9}"/>
+                </interactivity:EventTrigger>
+            </interactivity:Interaction.Triggers>
+            <TextBlock Background="MediumSpringGreen" Width="100" Canvas.Left="0" Canvas.Top="55" Height="18" TextWrapping="Wrap" TextAlignment="Center" RenderTransformOrigin="0.627,2.09"><Run FontFamily="Bernard MT Condensed" Text="Available"/></TextBlock>
+        </Canvas>
+        <Canvas Name="canvas10" AllowDrop="True" Background="White" HorizontalAlignment="Left" Height="80" Margin="10,300,0,0" VerticalAlignment="Top" Width="100" RenderTransformOrigin="0.108,0.159">
+            <interactivity:Interaction.Triggers>
+                <interactivity:EventTrigger EventName="Drop">
+                    <interactivity:InvokeCommandAction Command="{Binding DropCanvas}" CommandParameter="{Binding ElementName=canvas10}"/>
+                </interactivity:EventTrigger>
+            </interactivity:Interaction.Triggers>
+            <TextBlock Background="MediumSpringGreen" Width="100" Canvas.Left="0" Canvas.Top="55" Height="18" TextWrapping="Wrap" TextAlignment="Center" RenderTransformOrigin="0.627,2.09"><Run FontFamily="Bernard MT Condensed" Text="Available"/></TextBlock>
+        </Canvas>
+        <Canvas Name="canvas11" AllowDrop="True" Background="White" HorizontalAlignment="Left" Height="80" Margin="115,300,0,0" VerticalAlignment="Top" Width="100" RenderTransformOrigin="0.108,0.159">
+            <interactivity:Interaction.Triggers>
+                <interactivity:EventTrigger EventName="Drop">
+                    <interactivity:InvokeCommandAction Command="{Binding DropCanvas}" CommandParameter="{Binding ElementName=canvas11}"/>
+                </interactivity:EventTrigger>
+            </interactivity:Interaction.Triggers>
+            <TextBlock Background="MediumSpringGreen" Width="100" Canvas.Left="0" Canvas.Top="55" Height="18" TextWrapping="Wrap" TextAlignment="Center" RenderTransformOrigin="0.627,2.09"><Run FontFamily="Bernard MT Condensed" Text="Available"/></TextBlock>
+        </Canvas>
+        <Canvas Name="canvas12" AllowDrop="True" Background="White" HorizontalAlignment="Left" Height="80" Margin="220,300,0,0" VerticalAlignment="Top" Width="100" RenderTransformOrigin="0.108,0.159">
+            <interactivity:Interaction.Triggers>
+                <interactivity:EventTrigger EventName="Drop">
+                    <interactivity:InvokeCommandAction Command="{Binding DropCanvas}" CommandParameter="{Binding ElementName=canvas12}"/>
+                </interactivity:EventTrigger>
+            </interactivity:Interaction.Triggers>
+            <TextBlock Background="MediumSpringGreen" Width="100" Canvas.Left="0" Canvas.Top="55" Height="18" TextWrapping="Wrap" TextAlignment="Center" RenderTransformOrigin="0.627,2.09"><Run FontFamily="Bernard MT Condensed" Text="Available"/></TextBlock>
+        </Canvas>
+        <Canvas Name="canvas13" AllowDrop="True" Background="White" HorizontalAlignment="Left" Height="80" Margin="10,385,0,0" VerticalAlignment="Top" Width="100" RenderTransformOrigin="0.108,0.159">
+            <interactivity:Interaction.Triggers>
+                <interactivity:EventTrigger EventName="Drop">
+                    <interactivity:InvokeCommandAction Command="{Binding DropCanvas}" CommandParameter="{Binding ElementName=canvas13}"/>
+                </interactivity:EventTrigger>
+            </interactivity:Interaction.Triggers>
+            <TextBlock Background="MediumSpringGreen" Width="100" Canvas.Left="0" Canvas.Top="55" Height="18" TextWrapping="Wrap" TextAlignment="Center" RenderTransformOrigin="0.627,2.09"><Run FontFamily="Bernard MT Condensed" Text="Available"/></TextBlock>
+        </Canvas>
+        <Canvas Name="canvas14" AllowDrop="True" Background="White" HorizontalAlignment="Left" Height="80" Margin="115,385,0,0" VerticalAlignment="Top" Width="100" RenderTransformOrigin="0.108,0.159">
+            <interactivity:Interaction.Triggers>
+                <interactivity:EventTrigger EventName="Drop">
+                    <interactivity:InvokeCommandAction Command="{Binding DropCanvas}" CommandParameter="{Binding ElementName=canvas14}"/>
+                </interactivity:EventTrigger>
+            </interactivity:Interaction.Triggers>
+            <TextBlock Background="MediumSpringGreen" Width="100" Canvas.Left="0" Canvas.Top="55" Height="18" TextWrapping="Wrap" TextAlignment="Center" RenderTransformOrigin="0.627,2.09"><Run FontFamily="Bernard MT Condensed" Text="Available"/></TextBlock>
+        </Canvas>
+        <Canvas Name="canvas15" AllowDrop="True" Background="White" HorizontalAlignment="Left" Height="80" Margin="220,385,0,0" VerticalAlignment="Top" Width="100" RenderTransformOrigin="0.108,0.159">
+            <interactivity:Interaction.Triggers>
+                <interactivity:EventTrigger EventName="Drop">
+                    <interactivity:InvokeCommandAction Command="{Binding DropCanvas}" CommandParameter="{Binding ElementName=canvas15}"/>
+                </interactivity:EventTrigger>
+            </interactivity:Interaction.Triggers>
+            <TextBlock Background="MediumSpringGreen" Width="100" Canvas.Left="0" Canvas.Top="55" Height="18" TextWrapping="Wrap" TextAlignment="Center" RenderTransformOrigin="0.627,2.09"><Run FontFamily="Bernard MT Condensed" Text="Available"/></TextBlock>
+        </Canvas>
+
+
+        <Button Content="X" Background="Transparent" FontWeight="Bold" FontSize="16" Foreground="IndianRed" BorderThickness="0" Command="{Binding FreeCanvas1}" CommandParameter="{Binding ElementName=canvas1}" HorizontalAlignment="Left" Margin="10,45,0,0" VerticalAlignment="Top" Width="30" RenderTransformOrigin="0.907,-2.5" Height="30" Cursor="Hand"/>
+        <Button Content="X" Background="Transparent" FontWeight="Bold" FontSize="16" Foreground="IndianRed" BorderThickness="0" Command="{Binding FreeCanvas2}" CommandParameter="{Binding ElementName=canvas2}" HorizontalAlignment="Left" Margin="115,45,0,0" VerticalAlignment="Top" Width="30" RenderTransformOrigin="0.907,-2.5" Height="30" Cursor="Hand"/>
+        <Button Content="X" Background="Transparent" FontWeight="Bold" FontSize="16" Foreground="IndianRed" BorderThickness="0" Command="{Binding FreeCanvas3}" CommandParameter="{Binding ElementName=canvas3}" HorizontalAlignment="Left" Margin="220,45,0,0" VerticalAlignment="Top" Width="30" RenderTransformOrigin="0.907,-2.5" Height="30" Cursor="Hand"/>
+        <Button Content="X" Background="Transparent" FontWeight="Bold" FontSize="16" Foreground="IndianRed" BorderThickness="0" Command="{Binding FreeCanvas4}" CommandParameter="{Binding ElementName=canvas4}" HorizontalAlignment="Left" Margin="10,130,0,0" VerticalAlignment="Top" Width="30" RenderTransformOrigin="0.907,-2.5" Height="30" Cursor="Hand"/>
+        <Button Content="X" Background="Transparent" FontWeight="Bold" FontSize="16" Foreground="IndianRed" BorderThickness="0" Command="{Binding FreeCanvas5}" CommandParameter="{Binding ElementName=canvas5}" HorizontalAlignment="Left" Margin="115,130,0,0" VerticalAlignment="Top" Width="30" RenderTransformOrigin="0.907,-2.5" Height="30" Cursor="Hand"/>
+        <Button Content="X" Background="Transparent" FontWeight="Bold" FontSize="16" Foreground="IndianRed" BorderThickness="0" Command="{Binding FreeCanvas6}" CommandParameter="{Binding ElementName=canvas6}" HorizontalAlignment="Left" Margin="220,130,0,0" VerticalAlignment="Top" Width="30" RenderTransformOrigin="0.907,-2.5" Height="30" Cursor="Hand"/>
+        <Button Content="X" Background="Transparent" FontWeight="Bold" FontSize="16" Foreground="IndianRed" BorderThickness="0" Command="{Binding FreeCanvas7}" CommandParameter="{Binding ElementName=canvas7}" HorizontalAlignment="Left" Margin="10,215,0,0" VerticalAlignment="Top" Width="30" RenderTransformOrigin="0.907,-2.5" Height="30" Cursor="Hand"/>
+        <Button Content="X" Background="Transparent" FontWeight="Bold" FontSize="16" Foreground="IndianRed" BorderThickness="0" Command="{Binding FreeCanvas8}" CommandParameter="{Binding ElementName=canvas8}" HorizontalAlignment="Left" Margin="115,215,0,0" VerticalAlignment="Top" Width="30" RenderTransformOrigin="0.907,-2.5" Height="30" Cursor="Hand"/>
+        <Button Content="X" Background="Transparent" FontWeight="Bold" FontSize="16" Foreground="IndianRed" BorderThickness="0" Command="{Binding FreeCanvas9}" CommandParameter="{Binding ElementName=canvas9}" HorizontalAlignment="Left" Margin="220,215,0,0" VerticalAlignment="Top" Width="30" RenderTransformOrigin="0.907,-2.5" Height="30" Cursor="Hand"/>
+        <Button Content="X" Background="Transparent" FontWeight="Bold" FontSize="16" Foreground="IndianRed" BorderThickness="0" Command="{Binding FreeCanvas10}" CommandParameter="{Binding ElementName=canvas10}" HorizontalAlignment="Left" Margin="10,300,0,0" VerticalAlignment="Top" Width="30" RenderTransformOrigin="0.907,-2.5" Height="30" Cursor="Hand"/>
+        <Button Content="X" Background="Transparent" FontWeight="Bold" FontSize="16" Foreground="IndianRed" BorderThickness="0" Command="{Binding FreeCanvas11}" CommandParameter="{Binding ElementName=canvas11}" HorizontalAlignment="Left" Margin="115,299,0,0" VerticalAlignment="Top" Width="30" RenderTransformOrigin="0.907,-2.5" Height="30" Cursor="Hand"/>
+        <Button Content="X" Background="Transparent" FontWeight="Bold" FontSize="16" Foreground="IndianRed" BorderThickness="0" Command="{Binding FreeCanvas12}" CommandParameter="{Binding ElementName=canvas12}" HorizontalAlignment="Left" Margin="220,298,0,0" VerticalAlignment="Top" Width="30" RenderTransformOrigin="0.907,-2.5" Height="30" Cursor="Hand"/>
+        <Button Content="X" Background="Transparent" FontWeight="Bold" FontSize="16" Foreground="IndianRed" BorderThickness="0" Command="{Binding FreeCanvas13}" CommandParameter="{Binding ElementName=canvas13}" HorizontalAlignment="Left" Margin="10,385,0,0" VerticalAlignment="Top" Width="30" RenderTransformOrigin="0.907,-2.5" Height="30" Cursor="Hand"/>
+        <Button Content="X" Background="Transparent" FontWeight="Bold" FontSize="16" Foreground="IndianRed" BorderThickness="0" Command="{Binding FreeCanvas14}" CommandParameter="{Binding ElementName=canvas14}" HorizontalAlignment="Left" Margin="115,385,0,0" VerticalAlignment="Top" Width="30" RenderTransformOrigin="0.907,-2.5" Height="30" Cursor="Hand"/>
+        <Button Content="X" Background="Transparent" FontWeight="Bold" FontSize="16" Foreground="IndianRed" BorderThickness="0" Command="{Binding FreeCanvas15}" CommandParameter="{Binding ElementName=canvas15}" HorizontalAlignment="Left" Margin="220,385,0,0" VerticalAlignment="Top" Width="30" RenderTransformOrigin="0.907,-2.5" Height="30" Cursor="Hand"/>
+
+
+        <ListView Name="listViewObjects" ItemsSource="{Binding Objekti, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" SelectedItem="{Binding SelectedObject}" FontSize="20" Margin="600,45,0,135" Width="200"  RenderTransformOrigin="0.5,0.5" >
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock Foreground="Blue" Text="{Binding Id}" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+                        <TextBlock Text=" " VerticalAlignment="Center" HorizontalAlignment="Center"/>
+                        <TextBlock Foreground="Black" Text="{Binding Name}" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+                        <TextBlock Text=" " VerticalAlignment="Center" HorizontalAlignment="Center"/>
+                        <TextBlock Foreground="Black" Text="{Binding Value}" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+                    </StackPanel>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+            <interactivity:Interaction.Triggers>
+                <interactivity:EventTrigger EventName="MouseLeftButtonUp">
+                    <interactivity:InvokeCommandAction Command="{Binding MouseLeftButtonUp}"/>
+                </interactivity:EventTrigger>
+                <interactivity:EventTrigger EventName="SelectionChanged">
+                    <interactivity:InvokeCommandAction Command="{Binding SelectionChanged}" CommandParameter="{Binding ElementName=listViewObjects}"/>
+                </interactivity:EventTrigger>
+            </interactivity:Interaction.Triggers>
+        </ListView>
+        <TextBlock HorizontalAlignment="Left" Margin="351,45,0,0" TextWrapping="Wrap" Text="{Binding Err}" Foreground="Red" FontSize="20" VerticalAlignment="Top" Height="420" Width="222"/>
+
+
+    </Grid>
+</UserControl>

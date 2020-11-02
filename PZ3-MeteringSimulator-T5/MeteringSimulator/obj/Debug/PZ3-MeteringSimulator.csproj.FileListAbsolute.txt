@@ -1,0 +1,15 @@
+C:\Users\Bozo\Desktop\HCI\PZ3-MeteringSimulator-T5\MeteringSimulator\bin\Debug\MeteringSimulator.exe.config
+C:\Users\Bozo\Desktop\HCI\PZ3-MeteringSimulator-T5\MeteringSimulator\bin\Debug\MeteringSimulator.exe
+C:\Users\Bozo\Desktop\HCI\PZ3-MeteringSimulator-T5\MeteringSimulator\bin\Debug\MeteringSimulator.pdb
+C:\Users\Bozo\Desktop\HCI\PZ3-MeteringSimulator-T5\MeteringSimulator\obj\Debug\MainWindow.g.cs
+C:\Users\Bozo\Desktop\HCI\PZ3-MeteringSimulator-T5\MeteringSimulator\obj\Debug\App.g.cs
+C:\Users\Bozo\Desktop\HCI\PZ3-MeteringSimulator-T5\MeteringSimulator\obj\Debug\MeteringSimulator_MarkupCompile.cache
+C:\Users\Bozo\Desktop\HCI\PZ3-MeteringSimulator-T5\MeteringSimulator\obj\Debug\MeteringSimulator_MarkupCompile.lref
+C:\Users\Bozo\Desktop\HCI\PZ3-MeteringSimulator-T5\MeteringSimulator\obj\Debug\MainWindow.baml
+C:\Users\Bozo\Desktop\HCI\PZ3-MeteringSimulator-T5\MeteringSimulator\obj\Debug\MeteringSimulator.g.resources
+C:\Users\Bozo\Desktop\HCI\PZ3-MeteringSimulator-T5\MeteringSimulator\obj\Debug\MeteringSimulator.Properties.Resources.resources
+C:\Users\Bozo\Desktop\HCI\PZ3-MeteringSimulator-T5\MeteringSimulator\obj\Debug\PZ3-MeteringSimulator.csproj.GenerateResource.cache
+C:\Users\Bozo\Desktop\HCI\PZ3-MeteringSimulator-T5\MeteringSimulator\obj\Debug\PZ3-MeteringSimulator.csproj.CoreCompileInputs.cache
+C:\Users\Bozo\Desktop\HCI\PZ3-MeteringSimulator-T5\MeteringSimulator\obj\Debug\MeteringSimulator.exe
+C:\Users\Bozo\Desktop\HCI\PZ3-MeteringSimulator-T5\MeteringSimulator\obj\Debug\MeteringSimulator.pdb
+C:\Users\Bozo\Desktop\HCI\PZ3-MeteringSimulator-T5\MeteringSimulator\obj\Debug\PZ3-MeteringSimulator.csprojResolveAssemblyReference.cache

@@ -1,0 +1,36 @@
+﻿<Window x:Class="PZ3_NetworkService.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PZ3_NetworkService"
+        xmlns:views="clr-namespace:PZ3_NetworkService.Views"
+        xmlns:viewModel="clr-namespace:PZ3_NetworkService.ViewModel"
+        xmlns:data="clr-namespace:PZ3_NetworkService.Model"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="616" Width="805" ResizeMode="NoResize" >
+    <Window.DataContext>
+        <viewModel:MainViewModel/>
+    </Window.DataContext>
+    <Window.Background>
+        <ImageBrush ImageSource="C:\Users\Bozo\Desktop\HCI\PZ3-NetworkService\PZ3-NetworkService\Slike\prozor.jpg"/>
+    </Window.Background>
+    <Grid>
+        <TabControl x:Name="tabControl" Height="600" Width="778" Margin="10,20,-171,10" HorizontalAlignment="Left" VerticalAlignment="Top">
+            <TabItem Header="Network data" Height="40" Width="190" FontSize="18" Background="MediumAquamarine">
+                <views:NetworkDataView Margin="0,0,0,32"/>
+            </TabItem>
+                <TabItem Header="Report" Height="40" Width="190" FontSize="18" Background="Aquamarine">
+                <views:ReportView/>
+            </TabItem>
+            <TabItem Header="Data Chart" Height="40" Width="190" FontSize="18" Background="#99CDDB">
+                <views:DataChartView Margin="0,0,0,33"/>
+            </TabItem>
+
+            <TabItem Header="Network view" Height="40" Width="190" FontSize="18" Background="#68C998">
+                <views:NetworkViewView/>
+            </TabItem>
+            
+        </TabControl>
+    </Grid>
+</Window>
